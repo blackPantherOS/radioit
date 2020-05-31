@@ -145,6 +145,6 @@ void Pisadores::EmitFinal()
  */
 void Pisadores::Configuracion(const QString Player)
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     Dispositivo=RaditIni.value(Player + "/Dispositivo").toInt();
 }

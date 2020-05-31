@@ -574,7 +574,7 @@ void Stream::Configuracion(const QString Player)
 {
 
     Prefijo=Player; //establece el prefijo para identificarlo
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
 
     Dispositivo=RaditIni.value(Player + "/Dispositivo").toInt();
 

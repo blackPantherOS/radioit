@@ -23,7 +23,7 @@ Pisador::Pisador(HSTREAM Stream, bool Estado, QString Prefijo, QObject *parent):
     stream=Stream;
     estado=Estado;
 
-    /*QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    /*QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     Transicion=RaditIni.value(Prefijo + "/Transicion").toInt();
     Locucion=RaditIni.value(Prefijo + "/Locucion").toFloat();*/
 
@@ -64,7 +64,7 @@ void Pisador::setEstado(bool Estado)
  */
 void Pisador::setPrefijo(QString  Prefijo)
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     Transicion=RaditIni.value(Prefijo + "/Transicion").toInt();
     Locucion=RaditIni.value(Prefijo + "/Locucion").toFloat();
 }

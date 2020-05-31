@@ -186,7 +186,7 @@ bool Hth::IsFinal(HSTREAM cual)
  */
 void Hth::Configuracion(const QString Player)
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     Dispositivo=RaditIni.value(Player + "/Dispositivo").toInt();
     IsHFinal=false;//Ha reproducido la hora
     IsMFinal=false;
