@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       += core gui widgets 
-#webkitwidgets
 
 TARGET = RadioIt
 TEMPLATE = app
@@ -141,47 +140,4 @@ qmakeConfig += "use_gold_linker"
 RESOURCES += \
     radioit.qrc
 
-
 RC_FILE = radioit.rc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
 pushd /usr/share/radit
-./radit
+./radioit
 popd
