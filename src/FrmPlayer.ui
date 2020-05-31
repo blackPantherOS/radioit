@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="radit.qrc">
+   <iconset resource="radioit.qrc">
     <normaloff>:/general/iconos/player/ico.png</normaloff>:/general/iconos/player/ico.png</iconset>
   </property>
   <property name="styleSheet">
@@ -25,7 +25,16 @@
     <property name="spacing">
      <number>6</number>
     </property>
-    <property name="margin">
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <property name="bottomMargin">
      <number>9</number>
     </property>
     <item>
@@ -56,7 +65,16 @@ selection-background-color: rgb(255, 255, 255);
        <property name="spacing">
         <number>0</number>
        </property>
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
@@ -178,7 +196,7 @@ selection-background-color: rgb(255, 255, 255);
            </widget>
           </item>
           <item row="0" column="1" rowspan="4">
-           <widget class="QVUMeter" name="Vumeter">
+           <widget class="QVUMeter" name="Vumeter" native="true">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -200,37 +218,37 @@ selection-background-color: rgb(255, 255, 255);
             <property name="whatsThis">
              <string>VU Meter</string>
             </property>
-            <property name="colorBg">
+            <property name="colorBg" stdset="0">
              <color>
               <red>121</red>
               <green>136</green>
               <blue>177</blue>
              </color>
             </property>
-            <property name="colorLow">
+            <property name="colorLow" stdset="0">
              <color>
               <red>55</red>
               <green>188</green>
               <blue>177</blue>
              </color>
             </property>
-            <property name="colorHigh">
+            <property name="colorHigh" stdset="0">
              <color>
               <red>55</red>
               <green>188</green>
               <blue>177</blue>
              </color>
             </property>
-            <property name="leftValue">
+            <property name="leftValue" stdset="0">
              <double>0.000000000000000</double>
             </property>
-            <property name="rightValue">
+            <property name="rightValue" stdset="0">
              <double>0.000000000000000</double>
             </property>
-            <property name="minValue">
+            <property name="minValue" stdset="0">
              <double>0.000000000000000</double>
             </property>
-            <property name="maxValue">
+            <property name="maxValue" stdset="0">
              <double>120.000000000000000</double>
             </property>
             <property name="dimValue" stdset="0">
@@ -420,7 +438,16 @@ background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113
        <property name="spacing">
         <number>0</number>
        </property>
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
@@ -438,13 +465,13 @@ background-color: qlineargradient(spread:pad, x1:0.98, y1:0.642, x2:1, y2:0.0113
        </item>
        <item>
         <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
          <property name="horizontalSpacing">
           <number>1</number>
          </property>
          <property name="verticalSpacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
           <number>0</number>
          </property>
          <item row="1" column="1">
@@ -497,7 +524,7 @@ QPushButton:hover {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/play.png</normaloff>:/general/iconos/player/play.png</iconset>
            </property>
            <property name="iconSize">
@@ -558,7 +585,7 @@ QPushButton:hover {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/pause.png</normaloff>:/general/iconos/player/pause.png</iconset>
            </property>
            <property name="iconSize">
@@ -618,7 +645,7 @@ QPushButton:hover {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/stop.png</normaloff>:/general/iconos/player/stop.png</iconset>
            </property>
            <property name="iconSize">
@@ -641,7 +668,7 @@ QPushButton:hover {
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Siguiente</string>
+            <string>Following</string>
            </property>
            <property name="autoFillBackground">
             <bool>false</bool>
@@ -680,7 +707,7 @@ QPushButton:hover {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/next.png</normaloff>:/general/iconos/player/next.png</iconset>
            </property>
            <property name="iconSize">
@@ -734,7 +761,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/retroceso.png</normaloff>:/general/iconos/player/retroceso.png</iconset>
            </property>
            <property name="iconSize">
@@ -788,7 +815,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/avance.png</normaloff>:/general/iconos/player/avance.png</iconset>
            </property>
            <property name="iconSize">
@@ -811,7 +838,7 @@ QPushButton:hover {
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Stop tras finalizar</string>
+            <string>Stop after finishing</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
@@ -843,7 +870,7 @@ QPushButton:hover {
 </string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/parar.png</normaloff>:/general/iconos/player/parar.png</iconset>
            </property>
            <property name="iconSize">
@@ -866,7 +893,7 @@ QPushButton:hover {
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Pisador</string>
+            <string>Mixdown</string>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
@@ -897,7 +924,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/pisador.png</normaloff>:/general/iconos/player/pisador.png</iconset>
            </property>
            <property name="iconSize">
@@ -984,23 +1011,23 @@ font-size:12px;
       </column>
       <column>
        <property name="text">
-        <string>Título</string>
+        <string>Title</string>
        </property>
        <property name="textAlignment">
-        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        <set>AlignCenter</set>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Duración</string>
+        <string>Duration</string>
        </property>
        <property name="textAlignment">
-        <set>AlignRight|AlignVCenter</set>
+        <set>AlignTrailing|AlignVCenter</set>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Segundos</string>
+        <string>Seconds</string>
        </property>
       </column>
       <column>
@@ -1010,7 +1037,7 @@ font-size:12px;
       </column>
       <column>
        <property name="text">
-        <string>PTiempo</string>
+        <string>PWeather</string>
        </property>
       </column>
       <column>
@@ -1033,7 +1060,7 @@ font-size:12px;
      <x>0</x>
      <y>0</y>
      <width>498</width>
-     <height>18</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1084,7 +1111,7 @@ background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgb
 este</string>
     </property>
     <property name="title">
-     <string>&amp;Fichero</string>
+     <string>F&amp;ile</string>
     </property>
     <addaction name="actionNuevo"/>
     <addaction name="actionAbrir"/>
@@ -1117,7 +1144,7 @@ For a mor
  </string>
     </property>
     <property name="title">
-     <string>&amp;Editar</string>
+     <string>E&amp;dit</string>
     </property>
     <addaction name="actionCortar"/>
     <addaction name="actionCopiar"/>
@@ -1150,17 +1177,17 @@ background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgb
  </string>
     </property>
     <property name="title">
-     <string>Lista</string>
+     <string>&amp;Lists</string>
     </property>
     <widget class="QMenu" name="menuComandos">
      <property name="title">
-      <string>Comandos</string>
+      <string>&amp;Commands</string>
      </property>
      <addaction name="actionAddStop"/>
     </widget>
     <widget class="QMenu" name="menuHTH">
      <property name="title">
-      <string>HTH</string>
+      <string>&amp;Weather</string>
      </property>
      <property name="icon">
       <iconset>
@@ -1203,11 +1230,11 @@ For a mor
  </string>
     </property>
     <property name="title">
-     <string>Ver</string>
+     <string>&amp;Show</string>
     </property>
     <widget class="QMenu" name="menuBarraHerramientas">
      <property name="title">
-      <string>Barra de herramientas</string>
+      <string>&amp;Toolbar</string>
      </property>
      <addaction name="actionFichero"/>
      <addaction name="actionLista"/>
@@ -1238,7 +1265,7 @@ For a mor
  </string>
     </property>
     <property name="title">
-     <string>Herramientas</string>
+     <string>Tool&amp;bar</string>
     </property>
     <addaction name="actionPreferencias"/>
    </widget>
@@ -1337,11 +1364,11 @@ QToolButton:hover {
   </widget>
   <action name="actionNuevo">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/filenew.png</normaloff>:/general/iconos/menu/filenew.png</iconset>
    </property>
    <property name="text">
-    <string>Nuevo</string>
+    <string>&amp;New</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -1349,11 +1376,11 @@ QToolButton:hover {
   </action>
   <action name="actionAbrir">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/fileopen.png</normaloff>:/general/iconos/menu/fileopen.png</iconset>
    </property>
    <property name="text">
-    <string>Abrir</string>
+    <string>&amp;Open</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -1361,11 +1388,11 @@ QToolButton:hover {
   </action>
   <action name="actionGuardar">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/filesave.png</normaloff>:/general/iconos/menu/filesave.png</iconset>
    </property>
    <property name="text">
-    <string>Guardar</string>
+    <string>&amp;Save</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
@@ -1373,16 +1400,16 @@ QToolButton:hover {
   </action>
   <action name="actionGuardar_Como">
    <property name="text">
-    <string>Guardar Como...</string>
+    <string>Save &amp;As...</string>
    </property>
   </action>
   <action name="actionCortar">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/cut.png</normaloff>:/general/iconos/menu/cut.png</iconset>
    </property>
    <property name="text">
-    <string>Cortar</string>
+    <string>&amp;Cud</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+X</string>
@@ -1390,11 +1417,11 @@ QToolButton:hover {
   </action>
   <action name="actionCopiar">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/copy.png</normaloff>:/general/iconos/menu/copy.png</iconset>
    </property>
    <property name="text">
-    <string>Copiar</string>
+    <string>C&amp;opy</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
@@ -1402,7 +1429,7 @@ QToolButton:hover {
   </action>
   <action name="actionRecent">
    <property name="text">
-    <string>Recent</string>
+    <string>&amp;Recent</string>
    </property>
   </action>
   <action name="actionSalir">
@@ -1412,11 +1439,11 @@ QToolButton:hover {
   </action>
   <action name="actionPegar">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/paste.png</normaloff>:/general/iconos/menu/paste.png</iconset>
    </property>
    <property name="text">
-    <string>Pegar</string>
+    <string>&amp;Paste</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+V</string>
@@ -1424,11 +1451,11 @@ QToolButton:hover {
   </action>
   <action name="actionBorrar">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/delete.png</normaloff>:/general/iconos/menu/delete.png</iconset>
    </property>
    <property name="text">
-    <string>Borrar</string>
+    <string>&amp;Delete</string>
    </property>
    <property name="shortcut">
     <string>Del</string>
@@ -1436,11 +1463,14 @@ QToolButton:hover {
   </action>
   <action name="actionAddPista">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/añadir.png</normaloff>:/general/iconos/menu/añadir.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir pista...</string>
+    <string>&amp;Add track..</string>
+   </property>
+   <property name="iconText">
+    <string>Add a track</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
@@ -1448,20 +1478,20 @@ QToolButton:hover {
   </action>
   <action name="actionAddStop">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/player/stop.png</normaloff>:/general/iconos/player/stop.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir comando stop</string>
+    <string>&amp;Add stop command</string>
    </property>
   </action>
   <action name="actionAddHora">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir locución de hora</string>
+    <string>Add voiceover &amp;hour</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+H</string>
@@ -1469,20 +1499,20 @@ QToolButton:hover {
   </action>
   <action name="actionAddTemperatura">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/sol.png</normaloff>:/general/iconos/menu/sol.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir locución de temperatura</string>
+    <string>Add voiceover &amp;temperature</string>
    </property>
   </action>
   <action name="actionAddHumedad">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/nube.png</normaloff>:/general/iconos/menu/nube.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir locución humedad</string>
+    <string>Add voiceover humidity</string>
    </property>
   </action>
   <action name="actionFichero">
@@ -1493,7 +1523,7 @@ QToolButton:hover {
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Fichero</string>
+    <string>&amp;File</string>
    </property>
   </action>
   <action name="actionLista">
@@ -1504,21 +1534,24 @@ QToolButton:hover {
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Lista</string>
+    <string>&amp;List</string>
    </property>
   </action>
   <action name="actionPreferencias">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/preferencias.png</normaloff>:/general/iconos/menu/preferencias.png</iconset>
    </property>
    <property name="text">
-    <string>Preferencias</string>
+    <string>&amp;Preferences</string>
    </property>
   </action>
   <action name="actionActualizarSeleccion">
    <property name="text">
-    <string>Ver la duración de la selección...</string>
+    <string>See selection duration ...</string>
+   </property>
+   <property name="iconText">
+    <string>See selection duration ...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+L</string>
@@ -1526,7 +1559,7 @@ QToolButton:hover {
   </action>
   <action name="actionActualizar_duraci_n">
    <property name="text">
-    <string>Actualizar duración </string>
+    <string>U&amp;pdate duration</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+U</string>
@@ -1534,25 +1567,28 @@ QToolButton:hover {
   </action>
   <action name="actionActualizar_todas_las_duraciones">
    <property name="text">
-    <string>Actualizar todas las duraciones</string>
+    <string>Update all &amp;duration</string>
    </property>
   </action>
   <action name="actionAddPisadores">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/general/iconos/menu/voice.png</normaloff>:/general/iconos/menu/voice.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir Pisadores</string>
+    <string>Add Do&amp;wnMix</string>
    </property>
   </action>
   <action name="actionAddRadioInternet">
    <property name="icon">
-    <iconset resource="radit.qrc">
+    <iconset resource="radioit.qrc">
      <normaloff>:/ficheros/iconos/ficheros/online.png</normaloff>:/ficheros/iconos/ficheros/online.png</iconset>
    </property>
    <property name="text">
-    <string>Añadir radio de internet...</string>
+    <string>Add Internet &amp;radio</string>
+   </property>
+   <property name="iconText">
+    <string>Add a internet radio station</string>
    </property>
   </action>
  </widget>
@@ -1572,7 +1608,7 @@ QToolButton:hover {
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
  <slots>

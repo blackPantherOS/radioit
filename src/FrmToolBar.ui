@@ -55,7 +55,7 @@
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="toolTip">
-      <string>Auxiliar 1</string>
+      <string>Aux 1</string>
      </property>
      <property name="styleSheet">
       <string notr="true"> QPushButton {
@@ -76,7 +76,7 @@ background-color: rgb(139, 34, 2);
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/general/iconos/menu/aux1.png</normaloff>:/general/iconos/menu/aux1.png</iconset>
      </property>
      <property name="iconSize">
@@ -96,7 +96,7 @@ background-color: rgb(139, 34, 2);
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="toolTip">
-      <string>Auxiliar 2</string>
+      <string>Aux 2</string>
      </property>
      <property name="styleSheet">
       <string notr="true"> QPushButton {
@@ -116,7 +116,7 @@ background-color: rgb(139, 34, 2);
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/general/iconos/menu/aux2.png</normaloff>:/general/iconos/menu/aux2.png</iconset>
      </property>
      <property name="iconSize">
@@ -139,7 +139,7 @@ background-color: rgb(139, 34, 2);
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="toolTip">
-      <string>Paleta de cuñas</string>
+      <string>Jingle palette</string>
      </property>
      <property name="styleSheet">
       <string notr="true"> QPushButton {
@@ -168,7 +168,7 @@ QPushButton:disabled { color: grey; }</string>
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/general/iconos/menu/paleta.png</normaloff>:/general/iconos/menu/paleta.png</iconset>
      </property>
      <property name="iconSize">
@@ -200,7 +200,7 @@ QPushButton:disabled { color: grey; }</string>
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="toolTip">
-      <string>Indicadores y log de emisión</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Indicators and output logs&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="styleSheet">
       <string notr="true"> QPushButton {
@@ -220,7 +220,7 @@ background-color: rgb(139, 34, 2);
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/general/iconos/menu/log.png</normaloff>:/general/iconos/menu/log.png</iconset>
      </property>
      <property name="iconSize">
@@ -256,8 +256,8 @@ background-color: rgb(139, 34, 2);
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#343434;&quot;&gt;Acerca de...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; color:#343434;&quot;&gt;Creators, licences&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(38, 106, 208);
@@ -265,7 +265,7 @@ color: rgb(255, 255, 255);
 </string>
      </property>
      <property name="text">
-      <string>Acerca de..</string>
+      <string>About</string>
      </property>
      <property name="iconSize">
       <size>
@@ -280,13 +280,16 @@ color: rgb(255, 255, 255);
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
+     <property name="toolTip">
+      <string>Quit from application</string>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(38, 106, 208);
 color: rgb(255, 255, 255);
 </string>
      </property>
      <property name="text">
-      <string>Salir</string>
+      <string>Quit</string>
      </property>
     </widget>
    </item>
@@ -323,7 +326,7 @@ background-color: rgb(10, 67, 129);</string>
       <number>0</number>
      </property>
      <property name="pixmap">
-      <pixmap resource="radit.qrc">:/general/iconos/menu/logo.png</pixmap>
+      <pixmap resource="radioit.qrc">:/general/iconos/menu/logo.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>false</bool>
@@ -336,7 +339,7 @@ background-color: rgb(10, 67, 129);</string>
   </layout>
  </widget>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
 </ui>

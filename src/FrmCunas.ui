@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>886</width>
-    <height>28</height>
+    <height>20</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -57,7 +57,7 @@
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="toolTip">
-      <string>Auxiliar 1</string>
+      <string>AuxDoc 1</string>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
@@ -91,7 +91,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n1.png</normaloff>:/numeros/iconos/numeros/n1.png</iconset>
      </property>
      <property name="iconSize">
@@ -146,7 +146,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n2.png</normaloff>:/numeros/iconos/numeros/n2.png</iconset>
      </property>
      <property name="iconSize">
@@ -201,7 +201,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n3.png</normaloff>:/numeros/iconos/numeros/n3.png</iconset>
      </property>
      <property name="iconSize">
@@ -253,7 +253,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n4.png</normaloff>:/numeros/iconos/numeros/n4.png</iconset>
      </property>
      <property name="iconSize">
@@ -305,7 +305,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n5.png</normaloff>:/numeros/iconos/numeros/n5.png</iconset>
      </property>
      <property name="iconSize">
@@ -357,7 +357,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n6.png</normaloff>:/numeros/iconos/numeros/n6.png</iconset>
      </property>
      <property name="iconSize">
@@ -409,7 +409,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n7.png</normaloff>:/numeros/iconos/numeros/n7.png</iconset>
      </property>
      <property name="iconSize">
@@ -461,7 +461,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n8.png</normaloff>:/numeros/iconos/numeros/n8.png</iconset>
      </property>
      <property name="iconSize">
@@ -513,7 +513,7 @@ QPushButton:hover {
 </string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/numeros/iconos/numeros/n9.png</normaloff>:/numeros/iconos/numeros/n9.png</iconset>
      </property>
      <property name="iconSize">
@@ -611,10 +611,10 @@ color: rgb(255, 255, 0);
 </string>
      </property>
      <property name="text">
-      <string>Editar</string>
+      <string>Edit</string>
      </property>
      <property name="icon">
-      <iconset resource="radit.qrc">
+      <iconset resource="radioit.qrc">
        <normaloff>:/general/iconos/menu/preferencias.png</normaloff>:/general/iconos/menu/preferencias.png</iconset>
      </property>
      <property name="iconSize">
@@ -638,7 +638,7 @@ color: rgb(255, 255, 0);
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
 </ui>

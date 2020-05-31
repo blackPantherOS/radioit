@@ -11,10 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Eventos</string>
+   <string>Events</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="radit.qrc">
+   <iconset resource="radioit.qrc">
     <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
   </property>
   <property name="styleSheet">
@@ -28,7 +28,16 @@ color: rgb(255, 255, 255);</string>
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -61,7 +70,16 @@ color: rgb(255, 255, 255);</string>
       <property name="spacing">
        <number>0</number>
       </property>
-      <property name="margin">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
        <number>0</number>
       </property>
       <item>
@@ -102,7 +120,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/Add.png</normaloff>:/Eventos/iconos/eventos/Add.png</iconset>
           </property>
           <property name="iconSize">
@@ -142,7 +160,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/edit.png</normaloff>:/Eventos/iconos/eventos/edit.png</iconset>
           </property>
           <property name="iconSize">
@@ -182,7 +200,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/delete.png</normaloff>:/Eventos/iconos/eventos/delete.png</iconset>
           </property>
           <property name="iconSize">
@@ -222,7 +240,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/expirados.png</normaloff>:/Eventos/iconos/eventos/expirados.png</iconset>
           </property>
           <property name="iconSize">
@@ -279,7 +297,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/import.png</normaloff>:/Eventos/iconos/eventos/import.png</iconset>
           </property>
           <property name="iconSize">
@@ -319,7 +337,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/export .png</normaloff>:/Eventos/iconos/eventos/export .png</iconset>
           </property>
           <property name="iconSize">
@@ -376,7 +394,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/tabadd.png</normaloff>:/Eventos/iconos/eventos/tabadd.png</iconset>
           </property>
           <property name="iconSize">
@@ -416,7 +434,7 @@ QPushButton:hover {
 </string>
           </property>
           <property name="icon">
-           <iconset resource="radit.qrc">
+           <iconset resource="radioit.qrc">
             <normaloff>:/Eventos/iconos/eventos/tabdelete.png</normaloff>:/Eventos/iconos/eventos/tabdelete.png</iconset>
           </property>
           <property name="iconSize">
@@ -556,60 +574,42 @@ font-size:12px;
         </attribute>
         <column>
          <property name="text">
-          <string>Hora</string>
+          <string>Hour</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Comienzo</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>Start</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Fichero</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>File</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Prioridad</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>Priority</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Espera...</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>Wait...</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Días de la semana</string>
+          <string>Weekdays</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Horas</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>Hours</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Expiración</string>
-         </property>
-         <property name="textAlignment">
-          <set>AlignLeft|AlignVCenter</set>
+          <string>Expiration</string>
          </property>
         </column>
         <column>
@@ -658,7 +658,7 @@ QPushButton:hover {
 </string>
        </property>
        <property name="text">
-        <string>Aceptar</string>
+        <string>Accept</string>
        </property>
       </widget>
      </item>
@@ -674,7 +674,7 @@ QPushButton:hover {
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
 </ui>

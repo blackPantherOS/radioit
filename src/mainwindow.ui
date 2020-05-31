@@ -17,10 +17,10 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Radit  </string>
+   <string>RadioIt</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="radit.qrc">
+   <iconset resource="radioit.qrc">
     <normaloff>:/general/iconos/player/ico.png</normaloff>:/general/iconos/player/ico.png</iconset>
   </property>
   <property name="styleSheet">
@@ -82,7 +82,7 @@ border-color: rgb(255, 85, 0);</string>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
  <slots>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Horas del Evento</string>
+   <string>Hours of Events</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(33, 48, 58);</string>
@@ -44,7 +44,7 @@ QPushButton:hover {
 </string>
    </property>
    <property name="text">
-    <string>Todas</string>
+    <string>All</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BtnNinguna">
@@ -75,7 +75,7 @@ QPushButton:hover {
 </string>
    </property>
    <property name="text">
-    <string>Ninguna</string>
+    <string>None</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BtnCancelar">
@@ -106,7 +106,7 @@ QPushButton:hover {
 </string>
    </property>
    <property name="text">
-    <string>Cancelar</string>
+    <string>Cancel</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BtnAceptar">
@@ -137,7 +137,7 @@ QPushButton:hover {
 </string>
    </property>
    <property name="text">
-    <string>Aceptar</string>
+    <string>Accept</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -145,7 +145,7 @@ QPushButton:hover {
     <rect>
      <x>10</x>
      <y>0</y>
-     <width>171</width>
+     <width>175</width>
      <height>151</height>
     </rect>
    </property>

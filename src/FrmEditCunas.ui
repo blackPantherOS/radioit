@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Cuñas</string>
+   <string>Cuas</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(33, 48, 58);</string>
@@ -54,7 +54,7 @@ QPushButton:hover {
 </string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/añadir.png</normaloff>:/general/iconos/menu/añadir.png</iconset>
         </property>
         <property name="iconSize">
@@ -92,7 +92,7 @@ QPushButton:hover {
 </string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/delete.png</normaloff>:/general/iconos/menu/delete.png</iconset>
         </property>
         <property name="iconSize">
@@ -143,7 +143,7 @@ QPushButton:hover {
 </string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/player/play.png</normaloff>:/general/iconos/player/play.png</iconset>
         </property>
         <property name="iconSize">
@@ -181,7 +181,7 @@ QPushButton:hover {
 </string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/player/stop.png</normaloff>:/general/iconos/player/stop.png</iconset>
         </property>
         <property name="iconSize">
@@ -205,7 +205,7 @@ color: rgb(255, 255, 255);
 </string>
         </property>
         <property name="text">
-         <string>Página:</string>
+         <string>Page</string>
         </property>
        </widget>
       </item>
@@ -297,7 +297,7 @@ QPushButton:hover {
 </string>
         </property>
         <property name="text">
-         <string>Renombrar</string>
+         <string>Rename</string>
         </property>
        </widget>
       </item>
@@ -433,12 +433,12 @@ font-size:12px;
       </row>
       <column>
        <property name="text">
-        <string>Cuñas</string>
+        <string>Wedges</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Modo</string>
+        <string>Mode</string>
        </property>
       </column>
       <column>
@@ -451,7 +451,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n1.png</normaloff>:/numeros/iconos/numeros/n1.png</iconset>
        </property>
       </item>
@@ -470,7 +470,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n2.png</normaloff>:/numeros/iconos/numeros/n2.png</iconset>
        </property>
       </item>
@@ -489,7 +489,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n3.png</normaloff>:/numeros/iconos/numeros/n3.png</iconset>
        </property>
       </item>
@@ -508,7 +508,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n4.png</normaloff>:/numeros/iconos/numeros/n4.png</iconset>
        </property>
       </item>
@@ -527,7 +527,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n5.png</normaloff>:/numeros/iconos/numeros/n5.png</iconset>
        </property>
       </item>
@@ -546,7 +546,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n6.png</normaloff>:/numeros/iconos/numeros/n6.png</iconset>
        </property>
       </item>
@@ -565,7 +565,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n7.png</normaloff>:/numeros/iconos/numeros/n7.png</iconset>
        </property>
       </item>
@@ -584,7 +584,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n8.png</normaloff>:/numeros/iconos/numeros/n8.png</iconset>
        </property>
       </item>
@@ -603,7 +603,7 @@ font-size:12px;
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="radit.qrc">
+        <iconset resource="radioit.qrc">
          <normaloff>:/numeros/iconos/numeros/n9.png</normaloff>:/numeros/iconos/numeros/n9.png</iconset>
        </property>
       </item>
@@ -626,8 +626,8 @@ font-size:12px;
     <rect>
      <x>290</x>
      <y>320</y>
-     <width>171</width>
-     <height>31</height>
+     <width>176</width>
+     <height>36</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -658,7 +658,7 @@ QPushButton:hover {
 </string>
       </property>
       <property name="text">
-       <string>Aplicar...</string>
+       <string>Apply</string>
       </property>
      </widget>
     </item>
@@ -686,7 +686,7 @@ QPushButton:hover {
 </string>
       </property>
       <property name="text">
-       <string>Aceptar</string>
+       <string>Accept</string>
       </property>
      </widget>
     </item>
@@ -694,7 +694,7 @@ QPushButton:hover {
   </widget>
  </widget>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
 </ui>

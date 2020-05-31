@@ -46,7 +46,7 @@ color: rgb(0, 0, 0);
         <enum>QFrame::Plain</enum>
        </property>
        <property name="text">
-        <string>Preferencias</string>
+        <string>Preferences</string>
        </property>
       </widget>
      </item>
@@ -92,7 +92,7 @@ color: rgb(255, 255, 255);
          <string>General</string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/prefer.png</normaloff>:/general/iconos/menu/prefer.png</iconset>
         </property>
        </item>
@@ -101,7 +101,7 @@ color: rgb(255, 255, 255);
          <string>Pisador</string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/prefer.png</normaloff>:/general/iconos/menu/prefer.png</iconset>
         </property>
        </item>
@@ -146,7 +146,7 @@ color: rgb(255, 255, 255);
                <number>0</number>
               </property>
               <property name="text">
-               <string>Solapar pistas a</string>
+               <string>Overlap tracks to</string>
               </property>
              </widget>
             </item>
@@ -172,7 +172,7 @@ color: rgb(255, 255, 255);
                <number>0</number>
               </property>
               <property name="text">
-               <string>Segundos del final</string>
+               <string>Seconds from the end</string>
               </property>
              </widget>
             </item>
@@ -183,7 +183,8 @@ color: rgb(255, 255, 255);
             <item>
              <widget class="QLabel" name="label">
               <property name="text">
-               <string>Descartar pistas menores de</string>
+               <string>Discard minor tracks of
+</string>
               </property>
              </widget>
             </item>
@@ -200,7 +201,7 @@ color: rgb(255, 255, 255);
             <item>
              <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>Segundos</string>
+               <string>Seconds</string>
               </property>
              </widget>
             </item>
@@ -242,7 +243,7 @@ color: rgb(255, 255, 255);
                <number>0</number>
               </property>
               <property name="text">
-               <string>Tiempo de Fundido</string>
+               <string>Time of Fade</string>
               </property>
              </widget>
             </item>
@@ -265,7 +266,7 @@ color: rgb(255, 255, 255);
             <item>
              <widget class="QLabel" name="label_8">
               <property name="text">
-               <string>Segundos</string>
+               <string>Seconds</string>
               </property>
              </widget>
             </item>
@@ -278,7 +279,7 @@ color: rgb(255, 255, 255);
               <item>
                <widget class="QCheckBox" name="FundirSolapar">
                 <property name="text">
-                 <string>Fundidos al Solapar</string>
+                 <string>Overlapping Fades</string>
                 </property>
                 <property name="checkable">
                  <bool>true</bool>
@@ -291,7 +292,7 @@ color: rgb(255, 255, 255);
               <item>
                <widget class="QCheckBox" name="FundirParar">
                 <property name="text">
-                 <string>Fundido al Parar</string>
+                 <string>Fade to stop</string>
                 </property>
                </widget>
               </item>
@@ -358,10 +359,10 @@ color: rgb(255, 255, 255);
            </rect>
           </property>
           <property name="text">
-           <string>Activar Detector</string>
+           <string>Activate Detector</string>
           </property>
          </widget>
-         <widget class="QVUMeter" name="VuNivel">
+         <widget class="QVUMeter" name="VuNivel" native="true">
           <property name="geometry">
            <rect>
             <x>420</x>
@@ -376,35 +377,35 @@ color: rgb(255, 255, 255);
           <property name="whatsThis">
            <string>VU Meter</string>
           </property>
-          <property name="colorBg">
+          <property name="colorBg" stdset="0">
            <color>
             <red>33</red>
             <green>48</green>
             <blue>58</blue>
            </color>
           </property>
-          <property name="colorValue">
+          <property name="colorValue" stdset="0">
            <color>
             <red>33</red>
             <green>48</green>
             <blue>58</blue>
            </color>
           </property>
-          <property name="colorLow">
+          <property name="colorLow" stdset="0">
            <color>
             <red>79</red>
             <green>145</green>
             <blue>255</blue>
            </color>
           </property>
-          <property name="colorHigh">
+          <property name="colorHigh" stdset="0">
            <color>
             <red>79</red>
             <green>145</green>
             <blue>255</blue>
            </color>
           </property>
-          <property name="maxValue">
+          <property name="maxValue" stdset="0">
            <double>120.000000000000000</double>
           </property>
          </widget>
@@ -436,7 +437,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Dispositivo</string>
+          <string>Sound Device</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_9">
@@ -453,7 +454,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Superposición</string>
+          <string>Overlap</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_10">
@@ -470,7 +471,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Fundidos</string>
+          <string>Fade</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_11">
@@ -487,7 +488,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Detector de finales</string>
+          <string>End detector</string>
          </property>
         </widget>
        </widget>
@@ -575,7 +576,7 @@ color: rgb(255, 255, 255);</string>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(33, 48, 58);</string>
          </property>
-         <widget class="QVUMeter" name="VuNivel2_3">
+         <widget class="QVUMeter" name="VuNivel2_3" native="true">
           <property name="geometry">
            <rect>
             <x>420</x>
@@ -590,41 +591,41 @@ color: rgb(255, 255, 255);</string>
           <property name="whatsThis">
            <string>VU Meter</string>
           </property>
-          <property name="colorBg">
+          <property name="colorBg" stdset="0">
            <color>
             <red>33</red>
             <green>48</green>
             <blue>58</blue>
            </color>
           </property>
-          <property name="colorValue">
+          <property name="colorValue" stdset="0">
            <color>
             <red>33</red>
             <green>48</green>
             <blue>58</blue>
            </color>
           </property>
-          <property name="colorLow">
+          <property name="colorLow" stdset="0">
            <color>
             <red>79</red>
             <green>145</green>
             <blue>255</blue>
            </color>
           </property>
-          <property name="colorHigh">
+          <property name="colorHigh" stdset="0">
            <color>
             <red>79</red>
             <green>145</green>
             <blue>255</blue>
            </color>
           </property>
-          <property name="leftValue">
+          <property name="leftValue" stdset="0">
            <double>0.150000000000000</double>
           </property>
-          <property name="rightValue">
+          <property name="rightValue" stdset="0">
            <double>0.150000000000000</double>
           </property>
-          <property name="maxValue">
+          <property name="maxValue" stdset="0">
            <double>1.000000000000000</double>
           </property>
          </widget>
@@ -726,7 +727,7 @@ QPushButton:hover {
 </string>
        </property>
        <property name="text">
-        <string>Salir</string>
+        <string>Quit</string>
        </property>
       </widget>
      </item>
@@ -742,7 +743,7 @@ QPushButton:hover {
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Rotaciones</string>
+   <string>Rotations</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(33, 48, 58);</string>
@@ -82,23 +82,17 @@ font-size:12px;
       </column>
       <column>
        <property name="text">
-        <string>Título</string>
-       </property>
-       <property name="textAlignment">
-        <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        <string>Title</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Duración</string>
-       </property>
-       <property name="textAlignment">
-        <set>AlignRight|AlignVCenter</set>
+        <string>Duration</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Segundos</string>
+        <string>Seconds</string>
        </property>
       </column>
       <column>
@@ -108,7 +102,7 @@ font-size:12px;
       </column>
       <column>
        <property name="text">
-        <string>PTiempo</string>
+        <string>PWeather</string>
        </property>
       </column>
       <column>

@@ -17,10 +17,10 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Eventos</string>
+   <string>Events</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="radit.qrc">
+   <iconset resource="radioit.qrc">
     <normaloff>:/general/iconos/player/ico.png</normaloff>:/general/iconos/player/ico.png</iconset>
   </property>
   <property name="styleSheet">
@@ -119,7 +119,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
            </property>
            <property name="iconSize">
@@ -186,7 +186,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/menu/sol.png</normaloff>:/general/iconos/menu/sol.png</iconset>
            </property>
            <property name="iconSize">
@@ -253,7 +253,7 @@ QPushButton:hover {
  }</string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/menu/nube.png</normaloff>:/general/iconos/menu/nube.png</iconset>
            </property>
            <property name="iconSize">
@@ -319,18 +319,27 @@ border-color: rgb(255, 255, 255);
        <property name="spacing">
         <number>0</number>
        </property>
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
         <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
          <property name="horizontalSpacing">
           <number>1</number>
          </property>
          <property name="verticalSpacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
           <number>0</number>
          </property>
          <item row="0" column="2">
@@ -345,7 +354,7 @@ border-color: rgb(255, 255, 255);
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Actualizar eventos</string>
+            <string>Update events</string>
            </property>
            <property name="whatsThis">
             <string/>
@@ -386,7 +395,7 @@ QPushButton:hover {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/player/loop.png</normaloff>:/general/iconos/player/loop.png</iconset>
            </property>
            <property name="iconSize">
@@ -409,7 +418,7 @@ QPushButton:hover {
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Activar eventos</string>
+            <string>Active events</string>
            </property>
            <property name="whatsThis">
             <string/>
@@ -453,7 +462,7 @@ QPushButton:checked {
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/menu/eventos.png</normaloff>:/general/iconos/menu/eventos.png</iconset>
            </property>
            <property name="iconSize">
@@ -476,7 +485,7 @@ QPushButton:checked {
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="toolTip">
-            <string>Planificar eventos</string>
+            <string>Plan events</string>
            </property>
            <property name="whatsThis">
             <string/>
@@ -511,7 +520,7 @@ QPushButton:hover {
     </string>
            </property>
            <property name="icon">
-            <iconset resource="radit.qrc">
+            <iconset resource="radioit.qrc">
              <normaloff>:/general/iconos/menu/relog.png</normaloff>:/general/iconos/menu/relog.png</iconset>
            </property>
            <property name="iconSize">
@@ -559,7 +568,7 @@ background-color: rgb(33, 48, 58);</string>
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="radit.qrc">:/general/iconos/eventos/onair.png</pixmap>
+            <pixmap resource="radioit.qrc">:/general/iconos/eventos/onair.png</pixmap>
            </property>
           </widget>
          </item>
@@ -588,7 +597,7 @@ border-color: rgb(255, 255, 255);</string>
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string>Eventos próximos</string>
+           <string>Upcoming events</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -653,33 +662,30 @@ font-size:12px;
           </column>
           <column>
            <property name="text">
-            <string>Hora</string>
+            <string>Hour</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Comienzo</string>
+            <string>Start</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Título</string>
+            <string>Title</string>
            </property>
            <property name="textAlignment">
-            <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+            <set>AlignCenter</set>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Duración</string>
-           </property>
-           <property name="textAlignment">
-            <set>AlignRight|AlignVCenter</set>
+            <string>Duration</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>Segundos</string>
+            <string>Seconds</string>
            </property>
           </column>
           <column>
@@ -694,7 +700,7 @@ font-size:12px;
           </column>
           <column>
            <property name="text">
-            <string>fechahora</string>
+            <string>datehour</string>
            </property>
           </column>
          </widget>
@@ -762,7 +768,7 @@ color: rgb(250, 250, 250);
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections/>
 </ui>

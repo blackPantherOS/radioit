@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Preferencias Generales</string>
+   <string>General Preferences</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(33, 48, 58);</string>
@@ -53,7 +53,7 @@ QPushButton:hover {
 </string>
        </property>
        <property name="text">
-        <string>Salir</string>
+        <string>Go out</string>
        </property>
       </widget>
      </item>
@@ -87,7 +87,7 @@ color: rgb(0, 0, 0);
         <enum>QFrame::Plain</enum>
        </property>
        <property name="text">
-        <string>Preferencias</string>
+        <string>Preferences</string>
        </property>
       </widget>
      </item>
@@ -133,7 +133,7 @@ color: rgb(255, 255, 255);
          <string>Cue</string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/prefer.png</normaloff>:/general/iconos/menu/prefer.png</iconset>
         </property>
        </item>
@@ -142,7 +142,7 @@ color: rgb(255, 255, 255);
          <string>Other</string>
         </property>
         <property name="icon">
-         <iconset resource="radit.qrc">
+         <iconset resource="radioit.qrc">
           <normaloff>:/general/iconos/menu/prefer.png</normaloff>:/general/iconos/menu/prefer.png</iconset>
         </property>
        </item>
@@ -202,7 +202,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Dispositivo</string>
+          <string>Device</string>
          </property>
         </widget>
        </widget>
@@ -214,7 +214,7 @@ color: rgb(255, 255, 255);</string>
   </layout>
  </widget>
  <resources>
-  <include location="radit.qrc"/>
+  <include location="radioit.qrc"/>
  </resources>
  <connections>
   <connection>

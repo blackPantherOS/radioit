@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>432</width>
-    <height>492</height>
+    <width>457</width>
+    <height>518</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Añadir evento</string>
+   <string>Add event</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(33, 48, 58);
@@ -22,8 +22,8 @@
     <rect>
      <x>330</x>
      <y>250</y>
-     <width>97</width>
-     <height>201</height>
+     <width>121</width>
+     <height>261</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -55,7 +55,7 @@ color: rgb(255, 255, 255);
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>101</width>
+      <width>111</width>
       <height>16</height>
      </rect>
     </property>
@@ -72,7 +72,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Días</string>
+     <string>Days</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -83,8 +83,8 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>77</width>
-      <height>172</height>
+      <width>101</width>
+      <height>232</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -97,7 +97,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Lunes</string>
+        <string>Monday</string>
        </property>
       </widget>
      </item>
@@ -110,7 +110,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Martes</string>
+        <string>Tuesday</string>
        </property>
       </widget>
      </item>
@@ -123,7 +123,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Miercoles</string>
+        <string>Wednesday</string>
        </property>
       </widget>
      </item>
@@ -136,7 +136,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Jueves</string>
+        <string>Thursday</string>
        </property>
       </widget>
      </item>
@@ -149,7 +149,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Viernes</string>
+        <string>Friday</string>
        </property>
       </widget>
      </item>
@@ -162,7 +162,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Sábado</string>
+        <string>Saturday</string>
        </property>
       </widget>
      </item>
@@ -175,7 +175,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Domingo</string>
+        <string>Sunday</string>
        </property>
       </widget>
      </item>
@@ -200,7 +200,7 @@ QPushButton:hover {
 </string>
        </property>
        <property name="text">
-        <string>Invertir</string>
+        <string>Invest</string>
        </property>
       </widget>
      </item>
@@ -261,7 +261,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Tipo de evento</string>
+     <string>Event type</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -284,27 +284,27 @@ color: rgb(255, 255, 255);
     </property>
     <item>
      <property name="text">
-      <string>Fichero</string>
+      <string>File</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Carpeta</string>
+      <string>Folder</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Locución Hora</string>
+      <string>Voiceover Time</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Locución Temperatura</string>
+      <string>Voiceover Temperate</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Locución Humedad</string>
+      <string>Voiceover Humidity</string>
      </property>
     </item>
     <item>
@@ -536,7 +536,7 @@ color: rgb(255, 255, 255);
     <rect>
      <x>0</x>
      <y>1</y>
-     <width>431</width>
+     <width>451</width>
      <height>241</height>
     </rect>
    </property>
@@ -583,7 +583,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Una vez al día</string>
+        <string>O&amp;ne a day</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -605,7 +605,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Reproducir cada hora</string>
+        <string>&amp;Play every hour</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="RadioOtrasHoras">
@@ -624,7 +624,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Otras horas...</string>
+        <string>Othe&amp;r hours...</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_2">
@@ -651,7 +651,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>Periodicidad</string>
+        <string>Periodical</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -807,7 +807,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>Comportamiento</string>
+        <string>Behavior</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -968,7 +968,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>Fecha y hora</string>
+        <string>Date and Time</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -990,7 +990,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Expiración</string>
+        <string>Expiration</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_6">
@@ -1009,7 +1009,7 @@ color: rgb(255, 255, 255);
 </string>
        </property>
        <property name="text">
-        <string>Fecha y hora de inicio</string>
+        <string>Start date and time</string>
        </property>
       </widget>
       <widget class="QFrame" name="FramePrioridad_2">
@@ -1069,7 +1069,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Prioridad</string>
+         <string>Priority</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1081,7 +1081,7 @@ color: rgb(255, 255, 255);</string>
           <x>10</x>
           <y>30</y>
           <width>191</width>
-          <height>17</height>
+          <height>24</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -1094,7 +1094,7 @@ color: rgb(255, 255, 255);
 </string>
            </property>
            <property name="text">
-            <string>Alta</string>
+            <string>&amp;High</string>
            </property>
           </widget>
          </item>
@@ -1107,7 +1107,7 @@ color: rgb(255, 255, 255);
 </string>
            </property>
            <property name="text">
-            <string>Baja</string>
+            <string>&amp;Low</string>
            </property>
            <property name="checked">
             <bool>true</bool>
@@ -1124,38 +1124,13 @@ color: rgb(255, 255, 255);
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>460</y>
+     <x>10</x>
+     <y>470</y>
      <width>181</width>
-     <height>25</height>
+     <height>36</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QPushButton" name="BtnAceptar">
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-
-background-color: rgb(207, 207, 207);
-color: rgb(0, 0, 0);
-
-    
- }
-
- 
-
-QPushButton:hover {
-     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
- }
-
-</string>
-      </property>
-      <property name="text">
-       <string>Aceptar</string>
-      </property>
-     </widget>
-    </item>
     <item>
      <widget class="QPushButton" name="BtnCancelar">
       <property name="styleSheet">
@@ -1177,7 +1152,32 @@ QPushButton:hover {
 </string>
       </property>
       <property name="text">
-       <string>Cancelar</string>
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="BtnAceptar">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+
+background-color: rgb(207, 207, 207);
+color: rgb(0, 0, 0);
+
+    
+ }
+
+ 
+
+QPushButton:hover {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #f5b14e, stop: 1 #fff9ef);
+ }
+
+</string>
+      </property>
+      <property name="text">
+       <string>Apply</string>
       </property>
      </widget>
     </item>
