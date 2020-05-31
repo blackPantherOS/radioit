@@ -1,28 +1,28 @@
 RadioIt - Reborn Automation Software for Radios.
 ===============================================
 
-#### Radit is a free software project for the automation of radio stations.
+#### RadioIt is a free software project for the automation of radio stations.
 
 Among other functions, RadioIt supports:
 
-    Crossfade between audios.
-    Support for formats (MP2, MP3, WAV, WMA, OGG, FLAC).
-    Folder random play.
-    Event system to automate our content.
-    Two auxiliary players and one main one.
-    Output logs
-    Time, temperature and humidity voiceover.
-    Entry and exit tramplers.
-    Connections with online radios.
-    Sequences and batches to build advertising or musical blocks
-    And much more....
+- Crossfade between audios.
+- Support for formats (MP2, MP3, WAV, WMA, OGG, FLAC).
+- Folder random play.
+- Event system to automate our content.
+- Two auxiliary players and one main one.
+- Output logs
+- Time, temperature and humidity voiceover.
+- Entry and exit tramplers.
+- Connections with online radios.
+- Sequences and batches to build advertising or musical blocks
+- And much more....
 
 ## Install
 
 blackPanther OS
 ================
-    installing radioit
 
+    installing radioit
 
 ## Compile/Build
 
