@@ -2,11 +2,13 @@
  * Player
  * -----------------------------------------
  *
- * This main Window of Radit.
+ * This main Window of RadoIt.
  * Has conditions to signal to player.
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  **/
+
 #include <QDebug>
 #include <QDockWidget>
 
@@ -120,7 +122,7 @@ Player::Player(QString w_Prefijo, QMainWindow *parent )
     IsPause=false;
     IsGrupo=false;
 
-    NombreLista="Sinnombre.lst";
+    NombreLista="Unnamed.lst";
 
     IsEventoEspera=false;
     IsFinal=false;
@@ -130,7 +132,7 @@ Player::Player(QString w_Prefijo, QMainWindow *parent )
 
 Player::~Player()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     RaditIni.setValue("General/Principal",this->saveGeometry());
 }
 
@@ -172,7 +174,7 @@ void Player::ClickPlay()
        //Start("C:/discoteca/NOVEDADES DEL MES/KIKE GABANA - Dímelo Bajito.mp3",false);
    // return;
 
-    if(!w_Lista->rowCount())//if have zero elements on list
+    if(!w_Lista->rowCount()) //if have zero elements on list
         return;
 
     BotonEstado *w_BotonEstado = new BotonEstado(this->BtnPlay);
@@ -583,7 +585,7 @@ void Player::ClickNuevo(){
     w_Lista->setRowCount(0);
   //  w_Lista->TotalTiempo=0;
 
-    NombreLista="Sinnombre.lst";
+    NombreLista="Unnamed.lst";
 
    QString Titulo = windowTitle() + " - [ " + NombreLista + " ]";
      Dock->setWindowTitle(Titulo);

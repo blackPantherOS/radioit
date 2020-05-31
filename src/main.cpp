@@ -5,9 +5,10 @@
  * Radit is a free software project to automate radio stations,
  * compatible with GNU/Linux, Windows, the project is in development.
  *
- * Site: www.radit.org
+ * Site: www.blackpanther.hu
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  **/
 #include <QtGui/QApplication>
 #include "mainwindow.h"

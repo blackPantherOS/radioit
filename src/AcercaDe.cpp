@@ -4,7 +4,8 @@
  *
  * - View of about software
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include "AcercaDe.h"
 AcercaDe::AcercaDe(QDialog *parent )

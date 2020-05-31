@@ -5,7 +5,8 @@
  * - This class represent jingles
  * - Control with views
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #ifndef CUNAS_H
 #define CUNAS_H

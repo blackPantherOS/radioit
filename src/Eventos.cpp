@@ -56,7 +56,7 @@ Eventos::Eventos (QMainWindow *parent )
     FileModelo->setReadOnly(true);
     FileModelo->setRootPath(FileModelo->myComputer().toString());
 
-    QString inicio=QDesktopServices::storageLocation( QDesktopServices::DesktopLocation);
+    QString inicio=QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
 
 
     TExplore->setModel(FileModelo);
@@ -123,7 +123,7 @@ void Eventos::UpdateHora()
 
 void Eventos::ClickHtm()
 {
-    w_Hth->Configuracion("Principal");
+    w_Hth->Configuracion("Main");
     QObject* obj = QObject::sender();
     QPushButton *Boton = qobject_cast<QPushButton *>(obj);
     if(Boton == this->BtnHora){w_Hth->StartHora();}

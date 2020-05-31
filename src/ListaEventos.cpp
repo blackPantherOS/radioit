@@ -1,4 +1,5 @@
 #include <QHeaderView>
+#include <QWidget>
 #include "ListaEventos.h"
 
 ListaEventos::ListaEventos(QWidget *parent):
@@ -14,8 +15,8 @@ ListaEventos::ListaEventos(QWidget *parent):
     setDragDropOverwriteMode(false);
 
     this->setSelectionMode(QAbstractItemView::SingleSelection); //seleccionamos en una linea todas las columnas
-    this->horizontalHeader()->setMovable(false);  //evita cambiar las columnas
-    this->horizontalHeader()->setResizeMode(QHeaderView::Fixed); //evita redimensionar las columnas
+    this->horizontalHeader()->setSectionsMovable(false);  //evita cambiar las columnas
+    this->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed); //evita redimensionar las columnas
     this->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     this->setStyleSheet(QString::fromUtf8("QTableView {\n"

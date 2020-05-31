@@ -4,7 +4,8 @@
  *
  * - View of PlayerPisadores
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  **/
 #ifndef PLAYERPISADORES_H
 #define PLAYERPISADORES_H

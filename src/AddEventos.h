@@ -6,7 +6,8 @@
  * - This class represents a Dialog of new Event
  * - Has control of event add
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #ifndef ADDEVENTOS_H
 #define ADDEVENTOS_H

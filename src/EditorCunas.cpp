@@ -5,7 +5,8 @@
  * - Control with views
  * - This class work with jingles.
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QSettings>
 #include <QFileDialog>
@@ -61,12 +62,12 @@ void EditorCunas::ClickModificar()
     if(Lista->currentRow()==-1)//if dont have row marked
         return;
 
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     QString Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
     QString url;
 
     url = QFileDialog::getOpenFileName(0,
-                                       QObject::tr("Abrir"),
+                                       QObject::tr("Open"),
                                        Dir,
                                        QObject::tr("Sound file (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma)"
                                        ));

@@ -4,7 +4,8 @@
  *
  * - View of PlayerPisadores
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  **/
 #include <QDebug>
 #include <QFileDialog>
@@ -86,11 +87,11 @@ void PlayerPisadores::ClickFichero()
 
 QString PlayerPisadores::Fichero()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     QString   Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
 
     QString fileName = QFileDialog::getOpenFileName(0,
-                                                    QObject::tr("Abrir PlayList"),
+                                                    QObject::tr("Open PlayList"),
                                                     Dir,
                                                     QObject::tr("Sound file (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma);;"
                                                     ));
@@ -104,10 +105,10 @@ QString PlayerPisadores::Fichero()
 
 QString PlayerPisadores::Carpeta()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     QString   Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
 
-    QString dir = QFileDialog::getExistingDirectory(this, tr("Abrir Carpeta"),
+    QString dir = QFileDialog::getExistingDirectory(this, tr("Open Folder"),
                                                     Dir,
                                                     QFileDialog::ShowDirsOnly
                                                     | QFileDialog::DontResolveSymlinks);
@@ -291,19 +292,19 @@ void PlayerPisadores::ClickSalir()
     if(RInHora->isChecked())
     {
         Lista->setItem(Lista->currentRow(), 5, new  QTableWidgetItem (Segundos->text())); //Segundos locucion
-        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Locucion Hora.hora")); //urlIN
+        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Voiceover Hour.hora")); //urlIN
     }
 
     if(RInTemperatura->isChecked())
     {
         Lista->setItem(Lista->currentRow(), 5, new  QTableWidgetItem (Segundos->text())); //Segundos locucion
-        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Locucion Temperatura.tempe")); //urlIN
+        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Voiceover Temperature.tempe")); //urlIN
     }
 
     if(RInHumedad->isChecked())
     {
         Lista->setItem(Lista->currentRow(), 5, new  QTableWidgetItem (Segundos->text())); //Segundos locucion
-        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Locucion Humedad.hume")); //urlIN
+        Lista->setItem(Lista->currentRow(), 6, new  QTableWidgetItem ("Voiceover Humidity.hume")); //urlIN
     }
 
     if(RInFichero->isChecked())
@@ -321,17 +322,17 @@ void PlayerPisadores::ClickSalir()
     ///out
     if(ROutHora->isChecked())
     {
-         Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Locucion Hora.hora")); //urlIN
+         Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Voiceover Hour.hora")); //urlIN
     }
 
     if(ROutTemperatura->isChecked())
     {
-        Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Locucion Temperatura.tempe")); //urlIN
+        Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Voiceover Temperature.tempe")); //urlIN
     }
 
     if(ROutHumedad->isChecked())
     {
-         Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Locucion Humedad.hume")); //urlIN
+         Lista->setItem(Lista->currentRow(), 7, new  QTableWidgetItem ("Voiceover Humidity.hume")); //urlIN
     }
 
     if(ROutFichero->isChecked())

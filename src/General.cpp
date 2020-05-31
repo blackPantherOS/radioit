@@ -7,7 +7,8 @@
  * - Set/get General Settings
  * - Define device of cue etc
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 
 

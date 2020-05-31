@@ -5,7 +5,8 @@
  * - Control with views
  * - Work with radio online
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QDebug>
 #include "AddRadioInternet.h"

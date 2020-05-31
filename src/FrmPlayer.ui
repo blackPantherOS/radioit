@@ -1234,7 +1234,7 @@ For a mor
     </property>
     <widget class="QMenu" name="menuBarraHerramientas">
      <property name="title">
-      <string>&amp;Toolbar</string>
+      <string>&amp;Quick toolbar</string>
      </property>
      <addaction name="actionFichero"/>
      <addaction name="actionLista"/>
@@ -1265,7 +1265,7 @@ For a mor
  </string>
     </property>
     <property name="title">
-     <string>Tool&amp;bar</string>
+     <string>Too&amp;ls</string>
     </property>
     <addaction name="actionPreferencias"/>
    </widget>
@@ -1512,7 +1512,7 @@ QToolButton:hover {
      <normaloff>:/general/iconos/menu/nube.png</normaloff>:/general/iconos/menu/nube.png</iconset>
    </property>
    <property name="text">
-    <string>Add voiceover humidity</string>
+    <string>Add voiceover hu&amp;midity</string>
    </property>
   </action>
   <action name="actionFichero">
@@ -1548,7 +1548,7 @@ QToolButton:hover {
   </action>
   <action name="actionActualizarSeleccion">
    <property name="text">
-    <string>See selection duration ...</string>
+    <string>&amp;See selection duration ...</string>
    </property>
    <property name="iconText">
     <string>See selection duration ...</string>
@@ -1585,7 +1585,7 @@ QToolButton:hover {
      <normaloff>:/ficheros/iconos/ficheros/online.png</normaloff>:/ficheros/iconos/ficheros/online.png</iconset>
    </property>
    <property name="text">
-    <string>Add Internet &amp;radio</string>
+    <string>Add a new &amp;radio stream</string>
    </property>
    <property name="iconText">
     <string>Add a internet radio station</string>

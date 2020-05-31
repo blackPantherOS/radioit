@@ -2,6 +2,7 @@
 #define PLAYERGRUPOS_H
 
 #include <QMainWindow>
+#include <QSplitter>
 #include "ui_FrmGrupos.h"
 #include "engine/Stream.h"
 #include "engine/Hth.h"

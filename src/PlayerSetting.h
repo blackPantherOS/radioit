@@ -6,7 +6,8 @@
  * - Set/get Settings
  * - Define device of sound
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #ifndef PLAYERSETTING_H
 #define PLAYERSETTING_H

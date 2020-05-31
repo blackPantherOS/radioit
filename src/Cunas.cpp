@@ -5,7 +5,8 @@
  * - This class represent jingles
  * - Control with views
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QDebug>
 #include <QSqlRecord>
@@ -76,7 +77,7 @@ void Cunas::clickBoton()
 
     Pisadores * w_Pisadores = new Pisadores(rec.value("URL").toString());
     Boton->SetPisadore=w_Pisadores;
-    w_Pisadores->Configuracion("Principal");
+    w_Pisadores->Configuracion("Main");
     w_Pisadores->boton=Boton;
     connect(w_Pisadores, SIGNAL(FinishCuna(QPushButton*)), this, SLOT(Final(QPushButton*))); // Editor cuñas
     w_Pisadores->Start();

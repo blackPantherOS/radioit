@@ -5,7 +5,8 @@
  * - Control with views
  * - This class work with jingles.
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #ifndef EDITORCUNAS_H
 #define EDITORCUNAS_H

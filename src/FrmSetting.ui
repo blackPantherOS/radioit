@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Preferencias</string>
+   <string>Preferences</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(49, 49, 49);
@@ -98,7 +98,7 @@ color: rgb(255, 255, 255);
        </item>
        <item>
         <property name="text">
-         <string>Pisador</string>
+         <string>DownMix</string>
         </property>
         <property name="icon">
          <iconset resource="radioit.qrc">
@@ -122,7 +122,7 @@ color: rgb(255, 255, 255);
   border: 1px solid #000000;</string>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <widget class="QWidget" name="page_3">
         <widget class="QFrame" name="frame">
@@ -530,7 +530,7 @@ color: rgb(255, 255, 255);</string>
                <number>0</number>
               </property>
               <property name="text">
-               <string>Variación de</string>
+               <string>Variation of</string>
               </property>
              </widget>
             </item>
@@ -556,7 +556,7 @@ color: rgb(255, 255, 255);</string>
                <number>0</number>
               </property>
               <property name="text">
-               <string>Milisegundos</string>
+               <string>Milliseconds</string>
               </property>
              </widget>
             </item>
@@ -666,7 +666,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Transición</string>
+          <string>Transition</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_13">
@@ -683,7 +683,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Locución</string>
+          <string>Voiceover</string>
          </property>
         </widget>
        </widget>

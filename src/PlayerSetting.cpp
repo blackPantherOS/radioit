@@ -6,7 +6,8 @@
  * - Set/get Settings
  * - Define device of sound
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QDebug>
 #include "PlayerSetting.h"
@@ -56,7 +57,7 @@ void PlayerSetting::AddDispositivo()
     BASS_DEVICEINFO i;
     QString nombre;
 
-    QString nulo(tr("Sin Sonido")); //añadimos nulo
+    QString nulo(tr("Without Sound")); //añadimos nulo
     this->Dispositivo->addItem(nulo);
 
     #ifdef Q_OS_UNIX
@@ -69,7 +70,7 @@ void PlayerSetting::AddDispositivo()
     for (int c=1;BASS_GetDeviceInfo(c,&i);c++)// device 1 = el primer dispositivo
     {
         if (i.flags&BASS_DEVICE_ENABLED)// enabled, lo añadimos...
-                this->Dispositivo->addItem(nombre.fromAscii(i.name));
+                this->Dispositivo->addItem(nombre.fromUtf8(i.name));
     }
 }
 
@@ -80,7 +81,7 @@ void PlayerSetting::AddDispositivo()
  */
 void PlayerSetting::Establecer()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
 
     Dispositivo->setCurrentIndex(RaditIni.value(w_Modulo + "/Dispositivo").toInt());
     Solapar->setValue(RaditIni.value(w_Modulo + "/Solapar").toInt());
@@ -113,7 +114,7 @@ void PlayerSetting::Establecer()
  */
 void PlayerSetting::ClickSalir()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
 
     RaditIni.setValue(w_Modulo + "/Dispositivo",this->Dispositivo->currentIndex());
     RaditIni.setValue(w_Modulo + "/Solapar",this->Solapar->value());

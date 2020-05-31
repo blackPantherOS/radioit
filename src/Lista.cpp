@@ -1,4 +1,5 @@
 #include <QHeaderView>
+#include <QWidget>
 #include <QUrl>
 #include <QDebug>
 #include <QDir>
@@ -26,8 +27,8 @@ Lista::Lista(QWidget *parent): QTableWidget(parent)
     setDragDropOverwriteMode(false);
 
     this->setSelectionMode(QAbstractItemView::SingleSelection); //seleccionamos en una linea todas las columnas
-    this->horizontalHeader()->setMovable(false);  //evita cambiar las columnas
-    this->horizontalHeader()->setResizeMode(QHeaderView::Fixed); //evita redimensionar las columnas
+    this->horizontalHeader()->setSectionsMovable(false);  //evita cambiar las columnas
+    this->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed); //evita redimensionar las columnas
     this->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     this->setStyleSheet(QString::fromUtf8("QTableView {\n"
@@ -365,18 +366,18 @@ void Lista::ClickPegar()
 ///////////////////////////////// añadir pista ///////////////////////////
 void Lista::AddPista()
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     QString Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
 
     QStringList urls = QFileDialog::getOpenFileNames(0,
-                                                     QObject::tr("Abrir"),
+                                                     QObject::tr("Open"),
                                                      Dir,
-                                                     QObject::tr("Todos (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma *.rot *.seq *.tad *lst);;"
+                                                     QObject::tr("All (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma *.rot *.seq *.tad *lst);;"
                                                                  "Sound file (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma);;"
-                                                                 "Rotacion  (*.rot);;"
-                                                                 "Secuencia (*.seq);;"
+                                                                 "Rotation  (*.rot);;"
+                                                                 "Sequence (*.seq);;"
                                                                  "Tanda  (*.tad)"
-                                                                 "Lista  (*.lst)"
+                                                                 "List  (*.lst)"
                                                                  ));
 
 
@@ -404,21 +405,21 @@ void Lista::AddHora()
 {
     const int currentRow = this->rowCount();
     this->setRowCount(currentRow + 1);
-    this->InsItem("Locucion Hora.hora",currentRow);
+    this->InsItem("Voiceover Hour.hora",currentRow);
 }
 
 void Lista:: AddTemperatura()
 {
     const int currentRow = this->rowCount();
     this->setRowCount(currentRow + 1);
-    this->InsItem("Locucion Temperatura.tempe",currentRow);
+    this->InsItem("Voiceover Temperature.tempe",currentRow);
 }
 
 void Lista:: AddHumedad()
 {
     const int currentRow = this->rowCount();
     this->setRowCount(currentRow + 1);
-    this->InsItem("Locucion Humedad.hume",currentRow);
+    this->InsItem("Voiceover Humidity.hume",currentRow);
 }
 
 void Lista::AddRadio()
@@ -506,7 +507,7 @@ void Lista::DuracionSeleccion()
     }
 
     QMessageBox msgBox;
-    msgBox.setText(tr("La duracción del bloque seleccionado es:"));
+    msgBox.setText(tr("The duration of the selected one is:"));
     msgBox.setInformativeText(w_StreamMath->SegundoToFormato(Total,"hh:mm:ss"));
     msgBox.setIcon(QMessageBox::Information);
     msgBox.exec();

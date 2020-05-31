@@ -4,12 +4,12 @@
 #include <QDragEnterEvent>
 #include <QDropEvent>
 #include <QTableWidget>
-
 #include <QApplication>
 #include <QClipboard>
 #include <QStandardItemModel>
 #include <QStatusBar>
 #include <QProgressBar>
+#include <QMimeData>
 #include <QLabel>
 
 class Lista : public QTableWidget

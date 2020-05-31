@@ -4,7 +4,8 @@
  *
  * This main Window of Radit.
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  **/
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -42,25 +43,25 @@ MainWindow::MainWindow(QWidget *parent) :
     ToolBar * w_ToolBar = new ToolBar(this);
     //Cunas * w_Cunas = new Cunas(this);
 
-    DockPlayer->setWindowTitle("  Reproductor Principal");
-    DockEvento->setWindowTitle("  Eventos y Hth");
-    DockIndicadores->setWindowTitle("  Indicadores y Log emisión");
-    DockAux1->setWindowTitle("  Auxiliar 1");
-    DockAux2->setWindowTitle("  Auxiliar 2");
+    DockPlayer->setWindowTitle("  Main Player");
+    DockEvento->setWindowTitle("  Events and Weather");
+    DockIndicadores->setWindowTitle("  Indicators and Logs");
+    DockAux1->setWindowTitle("  Auxiliary 1");
+    DockAux2->setWindowTitle("  Auxiliary 2");
 
-    w_Player = new Player("Principal",this);
-    w_Player->setWindowTitle("  Reproductor Principal"); // esto no aparece pero sirve para identificar
+    w_Player = new Player("Main",this);
+    w_Player->setWindowTitle("  Main Player"); // esto no aparece pero sirve para identificar
     w_Player->Dock = DockPlayer;
     w_Player->MainWindow=this;
 
 
     Player *PlayerAux1 = new Player("Aux1",this);
-    PlayerAux1->setWindowTitle("  Auxiliar 1");  // esto no aparece pero sirve para identificar
+    PlayerAux1->setWindowTitle("  AuxPlay 1");  // esto no aparece pero sirve para identificar
     PlayerAux1->Dock = DockAux1;
     PlayerAux1->MainWindow=this;
 
     Player *PlayerAux2 = new Player("Aux2",this);
-    PlayerAux2->setWindowTitle("  Auxiliar 2");  // esto no aparece pero sirve para identificar
+    PlayerAux2->setWindowTitle("  AuxPlay 2");  // esto no aparece pero sirve para identificar
     PlayerAux2->Dock = DockAux2;
     PlayerAux2->MainWindow=this;
 
@@ -152,7 +153,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
-   //  QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+   //  QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
    //  this->restoreState(RaditIni.value("General/state").toByteArray());
    //  this->restoreDockWidget(DockPlayer);
 
@@ -164,7 +165,7 @@ MainWindow::MainWindow(QWidget *parent) :
  */
 MainWindow::~MainWindow()
 {
-  //  QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+  //  QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
   //  RaditIni.setValue("General/state", this->saveState());
 
     BASS_Free(); //Frees all resources used by the output device, including all its samples, streams and MOD musics.

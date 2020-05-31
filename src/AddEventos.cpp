@@ -6,7 +6,8 @@
  * - This class represents a Dialog of new Event
  * - Has control of event add
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QSettings>
 #include <QFileDialog>
@@ -145,7 +146,7 @@ void AddEventos::ClickAceptar()
     {
         QMessageBox msgBox;
 
-        msgBox.setText("Debe añadir un tipo de evento");
+        msgBox.setText("You must add an event type");
         msgBox.setIcon(QMessageBox::Question);
         msgBox.exec();
         return;
@@ -299,14 +300,14 @@ void AddEventos::NuevoEvento()
     if(ChecExpiracion->isChecked())
         query.addBindValue(DateExpiracion->text() +"  " + TimeExpiracion->text());
     else
-        query.addBindValue("No exprira");
+        query.addBindValue("No expire");
 
     query.addBindValue(ComboComportamiento->itemText(ComboComportamiento->currentIndex()));
 
     if(RadioPrioridadAlta->isChecked())
-        query.addBindValue(tr("Alta"));
+        query.addBindValue(tr("High"));
     else
-        query.addBindValue(tr("Baja"));
+        query.addBindValue(tr("Low"));
 
     // VER DIAS / HORAS
     query.addBindValue(DiasToString().toLatin1());
@@ -466,14 +467,14 @@ void AddEventos::UpdateEvento()
     if(ChecExpiracion->isChecked())
         query.addBindValue(DateExpiracion->text() +"  " + TimeExpiracion->text());
     else
-        query.addBindValue("No exprira");
+        query.addBindValue("No expire");
 
     query.addBindValue(ComboComportamiento->itemText(ComboComportamiento->currentIndex()));
 
     if(RadioPrioridadAlta->isChecked())
-        query.addBindValue(tr("Alta"));
+        query.addBindValue(tr("High"));
     else
-        query.addBindValue(tr("Baja"));
+        query.addBindValue(tr("Low"));
 
     // VER DIAS / HORAS
     query.addBindValue(DiasToString().toLatin1());
@@ -539,17 +540,17 @@ void AddEventos::ClickTipo(int Tipo)
 
         case 2:
             this->FrameTipoFichero->setVisible(false); //time
-            Url="Locucion Hora.hora";
+            Url="Voiceover Hour.hora";
             break;
 
         case 3:
             this->FrameTipoFichero->setVisible(false); //temp
-            Url="Locucion Temperatura.tempe";
+            Url="Voiceover Temperature.tempe";
             break;
 
         case 4:
             this->FrameTipoFichero->setVisible(false); //humedad
-            Url="Locucion Humedad.hume";
+            Url="Voiceover Humidity.hume";
             break;
 
         case 5:
@@ -594,7 +595,7 @@ void AddEventos::ClickUrl()
 
 void AddEventos::AddUrl(bool fichero)
 {
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     QString Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
     QString url;
 
@@ -602,19 +603,19 @@ void AddEventos::AddUrl(bool fichero)
     if(fichero)
     {
         url = QFileDialog::getOpenFileName(0,
-                                           QObject::tr("Abrir"),
+                                           QObject::tr("Open"),
                                            Dir,
-                                           QObject::tr("Todos (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma *.lst *.rot *.seq *.tad);;"
+                                           QObject::tr("All (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma *.lst *.rot *.seq *.tad);;"
                                                        "Sound file (*.wav *.mp2 *.mp3 *.ogg *.flac *.wma);;"
-                                                       "Listas  (*.lst);;"
-                                                       "Rotacion  (*.rot);;"
-                                                       "Secuencia (*.seq);;"
+                                                       "Lists  (*.lst);;"
+                                                       "Rotation  (*.rot);;"
+                                                       "Sequece (*.seq);;"
                                                        "Tanda  (*.tad)"
                                                        ));
     }
     else
     {
-        url = QFileDialog::getExistingDirectory(this, tr("Abrir Carpeta"),
+        url = QFileDialog::getExistingDirectory(this, tr("Open Folder"),
                                                 Dir,
                                                 QFileDialog::ShowDirsOnly
                                                 |QFileDialog::DontResolveSymlinks);
@@ -672,7 +673,7 @@ QString AddEventos::DiasToString()
     }
 
     if(CuantosDias==7)                   //todos loa dias
-        return("Toda la semana");
+        return("All week");
 
     //CuantosDias=CuantosDias*4-1;  // quitamos la ultima coma
     w_Dias=w_Dias.left(w_Dias.size()-1);
@@ -703,7 +704,7 @@ QString AddEventos::HorasToString()
     }
 
     if(CuantasHoras==24)//all days
-        return("Cada hora");
+        return("Hourly");
 
     w_Horas=w_Horas.left(w_Horas.size()-1);
 

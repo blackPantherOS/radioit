@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QWorkspace>
 #include <QMdiArea>
 #include <QLabel>
 
@@ -25,7 +24,7 @@ class MainWindow : public QMainWindow
 
     private:
         Ui::MainWindow *ui;
-        QWorkspace *workspace;
+        QMdiArea *workspace;
 
         QLabel *L_Hora;
 

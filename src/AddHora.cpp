@@ -6,7 +6,8 @@
  * - Control with views
  * - Set check true/false
  *
- * @author Victor Algaba
+ * @author Charles K Barcza - blackpanther.hu
+ * Previous Qt4 ver: Victor Algaba
  */
 #include <QDebug>
 #include "AddHora.h"

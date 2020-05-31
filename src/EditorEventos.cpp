@@ -53,8 +53,8 @@ EditorEventos::~EditorEventos()
 void EditorEventos::AddPestana()
 {
     bool ok;
-    QString text = QInputDialog::getText(this, tr("Añadir Solapa"),
-                                         tr("Nueva Solapa:"), QLineEdit::Normal);
+    QString text = QInputDialog::getText(this, tr("Add tab"),
+                                         tr("New tab:"), QLineEdit::Normal);
     if (text.isEmpty())
         return;
 
@@ -75,8 +75,8 @@ void EditorEventos::DelPestana()
 {
     QMessageBox msgBox;
 
-    msgBox.setText("Atención al eliminar la solapa, se eliminaran los eventos asociados");
-    msgBox.setInformativeText("¿Desea continuar?");
+    msgBox.setText("Attention! Removing the tab will remove the associated events");
+    msgBox.setInformativeText("Do you want continue?");
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     msgBox.setDefaultButton(QMessageBox::No);
     msgBox.setIcon(QMessageBox::Question);
@@ -126,7 +126,7 @@ void EditorEventos::AddEvento()
     {
         QMessageBox msgBox;
 
-        msgBox.setText("Debe añadir al menos una solapa");
+        msgBox.setText("You must add at least one tab");
         msgBox.setIcon(QMessageBox::Question);
         msgBox.exec();
         return;
