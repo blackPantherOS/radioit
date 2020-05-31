@@ -2,7 +2,7 @@
  **
  ** Copyright (C) 2010 Victor Algaba .
  ** All rights reserved.
- ** Contact: (www.radit.org)
+ ** Contact: (www.blackpanther.hu)
  **
  ** *************************************************************************
  **Crea un fichero indice.dat

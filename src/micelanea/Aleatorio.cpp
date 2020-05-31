@@ -81,7 +81,7 @@ void Aleatorio::DeleteIndex(){
     QFile file; //borramos los ficheros
     file.setFileName(Path + "/index.dat");
     file.remove();
-    file.setFileName(Path + "/radit.txt");
+    file.setFileName(Path + "/radioit.txt");
     file.remove();
     file.close();
 
@@ -146,7 +146,7 @@ int Aleatorio::NumeroAleatorio(int range_starts, int range_ends)
  */
 bool Aleatorio::Repetido(int numero)
 {
-    QFile file(Path + "/radit.txt");
+    QFile file(Path + "/radioit.txt");
 
     if (!file.open(QIODevice::WriteOnly| QIODevice::ReadOnly| QIODevice::Text))
         return(true);
@@ -175,7 +175,7 @@ void Aleatorio::Todos()
 {
     int TotalReproducidos=0;
 
-    QFile file(Path + "/radit.txt");
+    QFile file(Path + "/radioit.txt");
 
     file.open(QIODevice::WriteOnly| QIODevice::ReadOnly| QIODevice::Text);
 
@@ -205,7 +205,7 @@ void Aleatorio::Todos()
  */
 void Aleatorio::Nuevo(int ultimo)
 {
-    QFile file(Path + "/radit.txt");
+    QFile file(Path + "/radioit.txt");
     file.open(QIODevice::WriteOnly| QIODevice::ReadOnly| QIODevice::Text);
 
     QTextStream out(&file);
