@@ -40,7 +40,7 @@
         <file>iconos/player/stop.png</file>
         <file>iconos/player/pause.png</file>
         <file>iconos/player/play.png</file>
-        <file>iconos/radit.ico</file>
+        <file>iconos/radioit.ico</file>
     </qresource>
     <qresource prefix="/numeros">
         <file>iconos/numeros/n3.png</file>
