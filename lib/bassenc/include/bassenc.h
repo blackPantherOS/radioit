@@ -1,6 +1,6 @@
 /*
 	BASSenc 2.4 C/C++ header file
-	Copyright (c) 2003-2013 Un4seen Developments Ltd.
+	Copyright (c) 2003-2018 Un4seen Developments Ltd.
 
 	See the BASSENC.CHM file for more detailed documentation
 */
@@ -43,6 +43,7 @@ typedef DWORD HENCODE;		// encoder handle
 #define BASS_ENCODE_FP_16BIT	4		// convert floating-point sample data to 16-bit integer
 #define BASS_ENCODE_FP_24BIT	6		// convert floating-point sample data to 24-bit integer
 #define BASS_ENCODE_FP_32BIT	8		// convert floating-point sample data to 32-bit integer
+#define BASS_ENCODE_FP_AUTO		14		// convert floating-point sample data back to channel's format
 #define BASS_ENCODE_BIGEND		16		// big-endian sample data
 #define BASS_ENCODE_PAUSE		32		// start encording paused
 #define BASS_ENCODE_PCM			64		// write PCM sample data (no encoder)
@@ -53,6 +54,7 @@ typedef DWORD HENCODE;		// encoder handle
 #define BASS_ENCODE_CAST_NOLIMIT 0x1000	// don't limit casting data rate
 #define BASS_ENCODE_LIMIT		0x2000	// limit data rate to real-time
 #define BASS_ENCODE_AIFF		0x4000	// send an AIFF header rather than WAV
+#define BASS_ENCODE_DITHER		0x8000	// apply dither when converting floating-point sample data to integer
 #define BASS_ENCODE_AUTOFREE	0x40000 // free the encoder when the channel is freed
 
 // BASS_Encode_GetACMFormat flags
@@ -71,7 +73,7 @@ typedef DWORD HENCODE;		// encoder handle
 
 // BASS_Encode_CastInit content MIME types
 #define BASS_ENCODE_TYPE_MP3	"audio/mpeg"
-#define BASS_ENCODE_TYPE_OGG	"application/ogg"
+#define BASS_ENCODE_TYPE_OGG	"audio/ogg"
 #define BASS_ENCODE_TYPE_AAC	"audio/aacp"
 
 // BASS_Encode_CastGetStats types
@@ -85,7 +87,7 @@ handle : The encoder
 channel: The channel handle
 buffer : Buffer containing the encoded data
 length : Number of bytes
-user   : The 'user' parameter value given when calling BASS_Encode_Start */
+user   : The 'user' parameter value given when starting the encoder */
 
 typedef void (CALLBACK ENCODEPROCEX)(HENCODE handle, DWORD channel, const void *buffer, DWORD length, QWORD offset, void *user);
 /* Encoding callback function with offset info.
@@ -94,7 +96,17 @@ channel: The channel handle
 buffer : Buffer containing the encoded data
 length : Number of bytes
 offset : File offset of the data
-user   : The 'user' parameter value given when calling BASS_Encode_StartCA */
+user   : The 'user' parameter value given when starting the encoder */
+
+typedef DWORD (CALLBACK ENCODERPROC)(HENCODE handle, DWORD channel, void *buffer, DWORD length, DWORD maxout, void *user);
+/* Encoder callback function.
+handle : The encoder
+channel: The channel handle
+buffer : Buffer containing the PCM data (input) and receiving the encoded data (output)
+length : Number of bytes in (-1=closing)
+maxout : Maximum number of bytes out
+user   : The 'user' parameter value given when calling BASS_Encode_StartUser
+RETURN : The amount of encoded data (-1=stop) */
 
 typedef BOOL (CALLBACK ENCODECLIENTPROC)(HENCODE handle, BOOL connect, const char *client, char *headers, void *user);
 /* Client connection notification callback function.
@@ -120,11 +132,13 @@ user   : The 'user' parameter value given when calling BASS_Encode_SetNotify */
 
 // BASS_Encode_ServerInit flags
 #define BASS_ENCODE_SERVER_NOHTTP		1	// no HTTP headers
+#define BASS_ENCODE_SERVER_META			2	// Shoutcast metadata
 
 DWORD BASSENCDEF(BASS_Encode_GetVersion)();
 
 HENCODE BASSENCDEF(BASS_Encode_Start)(DWORD handle, const char *cmdline, DWORD flags, ENCODEPROC *proc, void *user);
 HENCODE BASSENCDEF(BASS_Encode_StartLimit)(DWORD handle, const char *cmdline, DWORD flags, ENCODEPROC *proc, void *user, DWORD limit);
+HENCODE BASSENCDEF(BASS_Encode_StartUser)(DWORD handle, const char *filename, DWORD flags, ENCODERPROC *proc, void *user);
 BOOL BASSENCDEF(BASS_Encode_AddChunk)(HENCODE handle, const char *id, const void *buffer, DWORD length);
 DWORD BASSENCDEF(BASS_Encode_IsActive)(DWORD handle);
 BOOL BASSENCDEF(BASS_Encode_Stop)(DWORD handle);
@@ -135,16 +149,18 @@ BOOL BASSENCDEF(BASS_Encode_SetNotify)(DWORD handle, ENCODENOTIFYPROC *proc, voi
 QWORD BASSENCDEF(BASS_Encode_GetCount)(DWORD handle, DWORD count);
 BOOL BASSENCDEF(BASS_Encode_SetChannel)(DWORD handle, DWORD channel);
 DWORD BASSENCDEF(BASS_Encode_GetChannel)(HENCODE handle);
+BOOL BASSENCDEF(BASS_Encode_UserOutput)(DWORD handle, QWORD offset, const void *buffer, DWORD length);
 
 #ifdef _WIN32
 DWORD BASSENCDEF(BASS_Encode_GetACMFormat)(DWORD handle, void *form, DWORD formlen, const char *title, DWORD flags);
 HENCODE BASSENCDEF(BASS_Encode_StartACM)(DWORD handle, const void *form, DWORD flags, ENCODEPROC *proc, void *user);
-HENCODE BASSENCDEF(BASS_Encode_StartACMFile)(DWORD handle, const void *form, DWORD flags, const char *file);
+HENCODE BASSENCDEF(BASS_Encode_StartACMFile)(DWORD handle, const void *form, DWORD flags, const char *filename);
 #endif
 
 #ifdef __APPLE__
 HENCODE BASSENCDEF(BASS_Encode_StartCA)(DWORD handle, DWORD ftype, DWORD atype, DWORD flags, DWORD bitrate, ENCODEPROCEX *proc, void *user);
-HENCODE BASSENCDEF(BASS_Encode_StartCAFile)(DWORD handle, DWORD ftype, DWORD atype, DWORD flags, DWORD bitrate, const char *file);
+HENCODE BASSENCDEF(BASS_Encode_StartCAFile)(DWORD handle, DWORD ftype, DWORD atype, DWORD flags, DWORD bitrate, const char *filename);
+void *BASSENCDEF(BASS_Encode_GetCARef)(DWORD handle);
 #endif
 
 #ifndef _WIN32_WCE
@@ -171,14 +187,19 @@ static inline HENCODE BASS_Encode_StartLimit(DWORD handle, const WCHAR *cmdline,
 	return BASS_Encode_StartLimit(handle, (const char *)cmdline, flags|BASS_UNICODE, proc, user, limit);
 }
 
+static inline HENCODE BASS_Encode_StartUser(DWORD handle, const WCHAR *filename, DWORD flags, ENCODERPROC *proc, void *user)
+{
+	return BASS_Encode_StartUser(handle, (const char *)filename, flags|BASS_UNICODE, proc, user);
+}
+
 static inline DWORD BASS_Encode_GetACMFormat(DWORD handle, void *form, DWORD formlen, const WCHAR *title, DWORD flags)
 {
 	return BASS_Encode_GetACMFormat(handle, form, formlen, (const char *)title, flags|BASS_UNICODE);
 }
 
-static inline HENCODE BASS_Encode_StartACMFile(DWORD handle, const void *form, DWORD flags, const WCHAR *file)
+static inline HENCODE BASS_Encode_StartACMFile(DWORD handle, const void *form, DWORD flags, const WCHAR *filename)
 {
-	return BASS_Encode_StartACMFile(handle, form, flags|BASS_UNICODE, (const char *)file);
+	return BASS_Encode_StartACMFile(handle, form, flags|BASS_UNICODE, (const char *)filename);
 }
 #endif
 #endif

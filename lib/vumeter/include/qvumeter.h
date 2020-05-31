@@ -23,6 +23,7 @@
 
 #include <QtGui>
 #include <QtDesigner/QDesignerExportWidget>
+#include <QWidget>
 #include <math.h>
 
 

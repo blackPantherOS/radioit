@@ -1,5 +1,5 @@
- 
- 
-#!/bin/bash
+#!/usr/bin/bash
 
-cd /opt/radit && ./radit
+pushd /usr/share/radit
+./radit
+popd
