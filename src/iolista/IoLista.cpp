@@ -20,7 +20,7 @@
 IoLista::IoLista(QTableWidget *cual)
 {
     lista=cual;
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
 
     //player1
     Dir=QDir::toNativeSeparators(RaditIni.value("General/Path").toString());
@@ -190,6 +190,6 @@ void IoLista::Path(const QString Cual)
     //qDebug() <<Directorio.isFile();
     if(!Directorio.isFile())
         return;
-    QSettings RaditIni("Radit.ini", QSettings::IniFormat);
+    QSettings RaditIni("RadioIt.ini", QSettings::IniFormat);
     RaditIni.setValue("General/Path",Directorio.absolutePath());
 }
