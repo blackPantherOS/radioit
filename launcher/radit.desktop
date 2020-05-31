@@ -1,14 +1,15 @@
 [Desktop Entry]
+Name=RadioIt
+Version=1.0
+Comment=Automation software for Radios.
 Comment[es]=Automatizador para emisoras de radio.
-Comment=Automatizador para emisoras de radio.
-Exec=radit
-GenericName[es]=Radit
-GenericName=Radit
-Icon=/usr/share/pixmaps/radit.svg
-Name[es]=Radit
-Name=Radit
+Comment[hu]=Adásvezérlő szoftver rádiókhoz
+GenericName=Radio Automation
+GenericName[es]=Radio Automatizador
+GenericName[hu]=Rádió Adásvezérlő
+Exec=radioit
+Icon=radit
 StartupNotify=true
 Terminal=false
 Type=Application
-Version=1.0
 Categories=AudioVideo;Player;Music;Multimedia;Qt;
